@@ -1,7 +1,7 @@
-module alu (
-    input [3:0] a,b,
+module alu #(parameter N = 4) (
+    input [N-1:0] a, b,
     input sel,
-    output reg [3:0] y
+    output reg [N-1:0] y
 );
     always @(*) begin
         if(sel) begin
