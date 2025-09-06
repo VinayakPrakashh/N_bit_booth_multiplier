@@ -22,7 +22,7 @@ always @(posedge clk) begin
             else if({q0,qm1}==2'b10 && !eqz) state<=S4;
             else if(eqz) state<=S6;
         end
-        S6: state<=S6;
+        S6: state<=S0;
         default: state<= S0;
     endcase
 end
