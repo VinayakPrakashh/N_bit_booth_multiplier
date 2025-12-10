@@ -5,10 +5,10 @@ module alu #(parameter N = 4) (
 );
     always @(*) begin
         if(sel) begin
-            y <= a - b;
+            y = a - b;
         end
         else begin
-            y <= a + b;
+            y = a + b;
         end
     end
 endmodule
